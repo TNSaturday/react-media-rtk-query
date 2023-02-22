@@ -9,7 +9,12 @@ function UserList() {
   useEffect(() => {
     void dispatch(getUsers());
   }, [dispatch]);
-  return <div>User List</div>;
+
+  if (isLoading) return <div>Loading...</div>;
+
+  if (error) return <div>Error fetching users</div>;
+
+  return <div>{users[0]?.name}</div>;
 }
 
 export default UserList;
