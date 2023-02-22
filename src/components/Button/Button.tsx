@@ -28,7 +28,7 @@ function Button({ children, outline, rounded, ...rest }: ButtonProps) {
   );
 
   return (
-    <button {...rest} className={classes}>
+    <button data-testid="defaultButton" {...rest} className={classes}>
       {children}
     </button>
   );

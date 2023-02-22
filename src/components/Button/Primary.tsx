@@ -11,7 +11,13 @@ export function Primary({ children, outline, rounded, ...rest }: ButtonProps) {
     rest.className
   );
   return (
-    <Button outline={outline} rounded={rounded} {...rest} className={classes}>
+    <Button
+      data-testid="primaryButton"
+      outline={outline}
+      rounded={rounded}
+      {...rest}
+      className={classes}
+    >
       {children}
     </Button>
   );
