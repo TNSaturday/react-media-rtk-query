@@ -8,6 +8,8 @@ interface User {
 
 const initialState = {
   users: [],
+  isLoading: false,
+  error: null
 };
 
 const usersSlice = createSlice({
