@@ -4,7 +4,7 @@ import { DetailedHTMLProps, HTMLAttributes } from "react";
 interface PanelProps
   extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
   children: React.ReactNode;
-  className: string;
+  className?: string;
 }
 
 function Panel({ children, className, ...rest }: PanelProps) {
@@ -14,7 +14,7 @@ function Panel({ children, className, ...rest }: PanelProps) {
   );
 
   return (
-    <div {...rest} className={finalClassNames}>
+    <div data-testid="panel" {...rest} className={finalClassNames}>
       {children}
     </div>
   );
