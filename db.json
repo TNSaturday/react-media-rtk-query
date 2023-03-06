@@ -1,5 +1,30 @@
 {
-  "users": [{ "id": 1, "name": "Taras" }],
+  "users": [
+    {
+      "id": 1,
+      "name": "Taras Subbota"
+    },
+    {
+      "name": "Terrence Bauch",
+      "id": 2
+    },
+    {
+      "name": "Loretta Gutmann",
+      "id": 3
+    },
+    {
+      "name": "Rafael Stoltenberg IV",
+      "id": 4
+    },
+    {
+      "name": "Leonard Hintz",
+      "id": 5
+    },
+    {
+      "name": "Francisco Sauer",
+      "id": 6
+    }
+  ],
   "albums": [],
   "photos": []
 }
