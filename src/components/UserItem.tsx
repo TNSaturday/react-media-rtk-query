@@ -5,6 +5,7 @@ import { ExpandablePanel } from "./index";
 import { deleteUser } from "../store";
 import { useState } from "react";
 import { useAppDispatch } from "../hooks";
+import AlbumList from "./AlbumList";
 
 function UserItem({ user }: { user: IUser }) {
   const dispatch = useAppDispatch();
@@ -32,7 +33,11 @@ function UserItem({ user }: { user: IUser }) {
     </>
   );
 
-  return <ExpandablePanel header={header}>CONTENT</ExpandablePanel>;
+  return (
+    <ExpandablePanel header={header}>
+      <AlbumList user={user} />
+    </ExpandablePanel>
+  );
 }
 
 export default UserItem;
