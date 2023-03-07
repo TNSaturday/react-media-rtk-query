@@ -1,6 +1,6 @@
 import classnames from "classnames";
 
-function Skeleton({ times, className }: { times: number; className: string }) {
+function Skeleton({ times, className }: { times: number; className?: string }) {
   const outerClassNames = classnames(
     "relative",
     "overflow-hidden",

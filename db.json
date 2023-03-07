@@ -37,6 +37,17 @@
       "id": 10
     }
   ],
-  "albums": [],
+  "albums": [
+    {
+      "id": 1,
+      "userId": 1,
+      "title": "Неизданное"
+    },
+    {
+      "userId": 1,
+      "title": "Rustic Bronze Ball",
+      "id": 2
+    }
+  ],
   "photos": []
 }
