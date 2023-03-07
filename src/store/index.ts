@@ -21,6 +21,7 @@ export const store = configureStore({
 
 export * from "./thunks/getUsers";
 export * from "./thunks/addUsers";
+export * from "./thunks/deleteUser";
 
 export type RootState = ReturnType<typeof store.getState>;
 export type AppStore = ReturnType<typeof setupStore>;

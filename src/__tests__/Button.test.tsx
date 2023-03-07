@@ -9,7 +9,7 @@ describe("Button tests", () => {
 
     expect(buttonElement).toBeTruthy();
     expect(buttonElement.className).toBe(
-      "flex items-center px-3 py-1.5 border"
+      "flex items-center px-3 py-1.5 border h-8"
     );
 
     button.unmount();
